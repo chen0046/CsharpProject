@@ -1,0 +1,16 @@
+﻿<Window x:Class="CSharpDotNetProject.Window2ListSearch"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSharpDotNetProject"
+        mc:Ignorable="d"
+        Title="Window2ListSearch" Height="450" Width="800">
+    <Grid>
+        <TextBox Name="searchBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,182,0,0" TextWrapping="Wrap" Width="194" Height="30" KeyUp="searchBox_KeyUp" RenderTransformOrigin="0.52,-3.793"/>
+        <DataGrid Name="certificateDGrid" d:ItemsSource="{Binding}" Margin="0,217,288,38" IsReadOnly="True" VerticalScrollBarVisibility="Auto" MouseDoubleClick="Double_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="326"><Run Text="Here you can "/><Run Text="see and search thro"/><Run Language="en-gb" Text="u"/><Run Text="gh the certificates in the database."/><Run Language="en-gb" Text=" Simply write the serial number of the car. "/></TextBlock>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="750,10,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+
+    </Grid>
+</Window>
